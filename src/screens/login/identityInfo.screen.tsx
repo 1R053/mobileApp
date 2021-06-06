@@ -29,7 +29,12 @@ export class IdentityInfoScreen extends React.Component<Props, State> {
                     </Text>
                     {'\n\n'}
                     <Text>
-                        Of course CloutFeed identity is open source and any one can proof the legitimacy of its operations.
+                        Of course CloutFeed identity is
+                        <Text
+                            style={[{ fontWeight: '500', color: '#d1eeff' }]}
+                            onPress={() => Linking.openURL('https://github.com/CloutFeed/mobileApp')}
+                        > open source </Text>
+                        and any one can proof the legitimacy of its operations.
                     </Text>
                     {'\n\n'}
                     <Text>
